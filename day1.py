@@ -1,10 +1,8 @@
 f = open('day1input.txt')
 floor = f.readline()
-    
-y = 0
-count = 0
 
 #part 1
+y = 0
 for x in floor:
     if x == '(':
         y += 1
@@ -13,6 +11,8 @@ for x in floor:
 print(y)
 
 #part 2
+y = 0
+count = 0
 for x in floor:
     if y >= 0:
         if x == '(':
