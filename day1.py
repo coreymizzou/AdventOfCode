@@ -4,6 +4,15 @@ floor = f.readline()
 y = 0
 count = 0
 
+#part 1
+for x in floor:
+    if x == '(':
+        y += 1
+    elif x == ')':
+        y -= 1
+print(y)
+
+#part 2
 for x in floor:
     if y >= 0:
         if x == '(':
